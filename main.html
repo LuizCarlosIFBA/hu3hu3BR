@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-        <link rel="shortcut icon" type="image/png" href="/favicon.png.png"/>
-        <link rel="shortcut icon" type="image/png" href="favicon.png.png"/>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png.png"/>
+    <link rel="shortcut icon" type="image/png" href="favicon.png.png"/>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PHºBIA</title>
     
+	<style>
+		#pop{display:none;position:absolute;top:50%;left:50%;margin-left:-150px;margin-top:-100px;padding:10px;width:300px;height:200px;border:1px solid #d0d0d0}
+	</style>
 </head>
 <body>
     <div id="menu">
@@ -31,13 +34,25 @@
     <div id="odio">
        <div><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15556.89129280347!2d-38.333644799999995!3d-12.8933888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1541792703613" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></div> 
         <div class="faca"><h1>Faça parte da equipe</h1>
-            <button>cadastre</button>
+            <!--<button onclick="document.getElementById('cadastro').style.display='block'"
+class="w3-button">cadastre</button>-->
+			<a a href="#" onclick="document.getElementById('pop').style.display='block';">
+				<button class="btn btn-primary">Cadastre</button>
+			</a>
         </div> 
     </div>
 
     <!-- <a href="">link2</a>
    <a href="">link1</a>  -->
 
-
+<div id="pop">
+	<a href="#" onclick="document.getElementById('pop').style.display='none';">[Fechar]</a>
+	<br />
+	Nome <input type="text" name="nome" id="nome" placeholder="nome"/></p>
+	E-mail <input type="text" name="email" id="email" placeholder="e-mail"/></p>
+	Senha <input type="password" name="senha" id="senha" placeholder="senha"/></p>
+</div>
+ 
+</div>
 </body>
 </html>
